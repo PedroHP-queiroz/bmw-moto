@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW - Bikes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="conteiner" id="bike">
+    <nav>
+        <img src="imagens/logo.png" class="logo">
+        <a href="#" class="btn">Test Drive</a>
+    </nav>
+    <div class="content">
+        <h2>THE BMW</h2>
+        <h1>G 310 R</h1>
+        <p>The strenght of the G 310 R is in its lighness and agility. The bike not only delivers fun in the big-city tumult, but also when you are redefining the city limits when chanching corners quickly.</p>
+        <h3>Chosse your color</h3>
+        <div class="colour-select">
+            <div id="red"></div>
+            <div id="blue"></div>
+            <div id="black"></div>
+        </div>
+    </div>
+</div>
+<script>
+    let redBtn = document.getElementById("red");
+    let blueBtn = document.getElementById("blue");
+    let blackBtn = document.getElementById("black");
+    let bike = document.getElementById("bike");
+    redBtn.onclick = function(){
+        bike.style.backgroundImage = "url(imagens/BMW1.png)";
+    }
+    blueBtn.onclick = function(){
+        bike.style.backgroundImage = "url(imagens/BMW2.png)";
+    }
+    blackBtn.onclick = function(){
+        bike.style.backgroundImage = "url(imagens/BMW3.png)";
+    }
+</script>
+
+</body>
+</html>
